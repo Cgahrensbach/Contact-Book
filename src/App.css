@@ -1,0 +1,249 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Modal overlay styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensures modal is on top */
+}
+
+/* Modal content */
+.modal-content {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease; /* Fade-in effect */
+}
+
+/* Close button for modal */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Styles for input fields inside the modal */
+.modal-content input {
+  width: 100%;           /* Full width within the modal */
+  padding: 10px;         /* Increase padding for a larger box */
+  margin-bottom: 10px;   /* Add space between input fields */
+  font-size: 16px;       /* Larger font size */
+  border: 1px solid #ccc;
+  border-radius: 5px;    /* Rounded corners */
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+.modal-content button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #4ea75d; /* Darker green on hover */
+}
+
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Styles for the contact list */
+.contact-list {
+  margin-top: 20px;
+}
+
+/* Style for the letter indicators */
+.letter-indicators {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for each letter section */
+.letter-section {
+  margin-bottom: 20px;
+}
+
+/* Individual contact list item */
+.contact-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 5px 0;
+}
+
+/* Button for deleting contacts */
+.contact-list button {
+  margin-left: 10px;
+  background-color: #d0c0be; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-list button:hover {
+  background-color: #987979; 
+}
+/* Contact button styles */
+.contact-button {
+  background-color: #3498db;  
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.contact-button:hover {
+  background-color: #2980b9;  
+}
+
+/* Delete button styles */
+.delete-button {
+  background-color: #e74c3c;  
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;  
+}
+
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Contact button styles */
+.contact-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.contact-button:hover {
+  background-color: #45a049;
+}
+
+/* Delete button */
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+
+
